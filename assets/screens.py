@@ -59,6 +59,7 @@ def show_decision_menu(prompt:str,menu_list:list=[],last_str:list=[],validChoice
             raise TypeError
             # see if can instead do a scroll?
         menu_list = format_menu_list(menu_list,split)
+    
 
 
 def format_menu_list(menu_list:list=[],split:int=0,borderLeft="|",borderRight="|",blank=" "):
@@ -122,12 +123,6 @@ def format_menu_list(menu_list:list=[],split:int=0,borderLeft="|",borderRight="|
             row_str.append("".join(row))
         return row_str
         
-        
-            
-
-
-
-
 def reformat_str(message_list:list,additional_sub_width:int=0):
     m_list = []
     if additional_sub_width>= WIDTH:
